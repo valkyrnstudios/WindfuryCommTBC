@@ -3,6 +3,7 @@
 ## Interface-Classic: 11508
 ## Version: @project-version@
 ## Title: WindfuryComm++
+## Notes: Addon for both Shamans and Melee, transmitting WF weapon enchant timer to party members, and for Shaman shows the WF timer for melee party members.
 ## Author: Kof, Yotta
 ## SavedVariables: wfcdb
 ## SavedVariablesPerCharacter: wfcdbc
