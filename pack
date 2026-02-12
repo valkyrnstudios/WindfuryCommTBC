@@ -1,9 +1,0 @@
-cd ..
-rm -rf ~/tmp/WindfuryComm
-#mkdir ~/tmp/WindfuryComm
-cp -r WindfuryComm ~/tmp/
-cd ~/tmp/WindfuryComm
-rm -rf pack .idea .git node_modules .DS_Store _MACOSX
-cd ..
-zip -9r WindfuryComm_$1.zip WindfuryComm -x \*.DS_Store -x \_MACOSX -x \.git -x \.idea
-rm -rf ~/tmp/WindfuryComm
