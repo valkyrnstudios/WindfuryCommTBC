@@ -1,6 +1,7 @@
 local addonName, _ = ...
 
 local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or _G.GetAddOnMetadata
+local SendChatMessage = C_ChatInfo and C_ChatInfo.SendChatMessage or _G.SendChatMessage
 
 wfc = CreateFrame("Frame", "WindfuryCommPP")
 
