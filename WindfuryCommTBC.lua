@@ -40,7 +40,7 @@ C_ChatInfo.RegisterAddonMessagePrefix(COMM_PREFIX_PING)
 C_ChatInfo.RegisterAddonMessagePrefix(COMM_PREFIX_PONG)
 
 local function out(text, ...)
-	print(" |cffff8800{|cffffbb00WFC++|cffff8800}|r "..text, ...)
+	print(" |cffff8800{|cffffbb00WFCTBC|cffff8800}|r "..text, ...)
 end
 wfc.out = out
 
