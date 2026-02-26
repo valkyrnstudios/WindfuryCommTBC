@@ -5,7 +5,7 @@ local LibWFcomm = LibStub:NewLibrary(major, minor)
 local CTL = _G.ChatThrottleLib
 local COMM_PREFIX = "WF_STATUS"
 local COMM_PREFIX_CREDIT = "WF_CREDIT"
-local WF_ENCHANTS = { [564] = 'WF3', [563] = 'WF2', [1783] = 'WF1' }
+local WF_ENCHANTS = { [2639] = 'WF5', [2638] = 'WF4', [564] = 'WF3', [563] = 'WF2', [1783] = 'WF1' }
 local TRACKED_AURAS = {
     [25362] = "STR",
     [10441] = "STR",
