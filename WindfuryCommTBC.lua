@@ -3,7 +3,7 @@ local addonName, _ = ...
 local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or _G.GetAddOnMetadata
 local SendChatMessage = C_ChatInfo and C_ChatInfo.SendChatMessage or _G.SendChatMessage
 
-wfc = CreateFrame("Frame", "WindfuryCommPP")
+wfc = CreateFrame("Frame", "WindfuryComm")
 
 wfc.eventReg = wfc.eventReg or CreateFrame("Frame")
 wfc.eventReg:RegisterEvent("PLAYER_ENTERING_WORLD")

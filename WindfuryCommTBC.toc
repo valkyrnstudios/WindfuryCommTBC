@@ -1,13 +1,11 @@
-## Interface: 11508, 20505
-## Interface-TBC: 20505
-## Interface-Classic: 11508
+## Interface: 20505
 ## Version: @project-version@
-## Title: WindfuryComm++
+## Title: WindfuryCommTBC
 ## Notes: Addon for both Shamans and Melee, transmitting WF weapon enchant timer to party members, and for Shaman shows the WF timer for melee party members.
-## Author: Kof, Yotta
-## SavedVariables: wfcdb
-## SavedVariablesPerCharacter: wfcdbc
-## X-Curse-Project-ID: 934134
+## Author: SabreValkyrn, Kof, Yotta
+## SavedVariables: wfctbcdb
+## SavedVariablesPerCharacter: wfctbcdbc
+## X-Curse-Project-ID: 1472054
 
 #@no-lib-strip@
 libs\LibStub\LibStub.lua
@@ -16,4 +14,4 @@ libs\LibWFcomm\LibWFcomm.xml
 
 ShamanUI.lua
 MeleeUI.xml
-WindfuryComm.lua
+WindfuryCommTBC.lua

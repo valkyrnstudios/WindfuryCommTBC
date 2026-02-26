@@ -1,4 +1,6 @@
-# WindfuryComm++
+# WindfuryCommTBC
+
+*Temporary until upstream changes in [WindfuryComm++](https://www.curseforge.com/wow/addons/windfurycomm-plusplus)
 
 Allows Shamans to see WF time of melee party members.
 
