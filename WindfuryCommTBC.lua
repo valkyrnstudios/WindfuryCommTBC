@@ -1,4 +1,9 @@
-wfc = CreateFrame("Frame", "WindfuryCommPP")
+local addonName, _ = ...
+
+local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or _G.GetAddOnMetadata
+local SendChatMessage = C_ChatInfo and C_ChatInfo.SendChatMessage or _G.SendChatMessage
+
+wfc = CreateFrame("Frame", "WindfuryComm")
 
 wfc.eventReg = wfc.eventReg or CreateFrame("Frame")
 wfc.eventReg:RegisterEvent("PLAYER_ENTERING_WORLD")
@@ -12,7 +17,13 @@ wfc.eventReg:RegisterEvent("CHAT_MSG_PARTY_LEADER")
 
 wfc.partyVersion = {}
 wfc.encounter = nil
-wfc.version, wfc.numericalVersion = "2.1.6", 20106
+
+wfc.version = GetAddOnMetadata(addonName, "Version")
+if not wfc.version or string.match(wfc.version, 'project') then wfc.version = '1.0.0' end
+
+-- "2.1.3" -> 20103
+wfc.numericalVersion = tonumber(string.gsub(wfc.version, ".", "0"))
+
 wfc.lib = LibStub("LibWFcomm")
 
 local newVersionAlerted = false
