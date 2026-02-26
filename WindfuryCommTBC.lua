@@ -282,7 +282,7 @@ local function WFCSlashCommands(entry)
 	elseif arg1 == "hide" then
 		wfc:HideUI()
 	else
-		out("|cffff8877WindfuryComm++ v"..wfc.version.." commands:")
+		out("|cffff8877WindfuryCommTBC v"..wfc.version.." commands:")
 		out("|cFF00FFaa/wfc <hide/show>|r show or hide UI ("..(wfcdbc.shown and "|cff00ff00shown|r" or "|cffff0000hidden|r")..")")
 		if isMelee then
 			out("|cFF00FFaa/wfc reset|r reset stats")
