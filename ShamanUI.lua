@@ -12,7 +12,7 @@ local classIcon = {
 }
 
 -- https://wowwiki-archive.fandom.com/wiki/EnchantId/Enchant_IDs
-local spellTable = { [564] = 'WF3', [563] = 'WF2', [1783] = 'WF1' }
+local spellTable = { [2639] = 'WF5', [2638] = 'WF4', [564] = 'WF3', [563] = 'WF2', [1783] = 'WF1' }
 
 local function GetPartySig()
     local sig = ""
@@ -155,7 +155,7 @@ function WFCShamanFrame:ResetGroup()
 end
 
 function WFCShamanFrame:StartTimerButton(gGUID, remain)
-    icon = self.icons[gGUID]
+    local icon = self.icons[gGUID]
     if remain > 0 and self.ixs[gGUID] then
         local j = self.ixs[gGUID]
         self.buttons[j].icon:SetDesaturated(nil)
@@ -167,7 +167,8 @@ function WFCShamanFrame:StartTimerButton(gGUID, remain)
 end
 
 function WFCShamanFrame:SetBlockerButton(gGUID, remain, spellID)
-    _, _, icon, _, _, _, _ = GetSpellInfo(spellID)
+    local _, _, icon, _, _, _, _ = GetSpellInfo(spellID)
+
     if remain > 0 and self.ixs[gGUID] then
         local j = self.ixs[gGUID]
         self.buttons[j].icon:SetTexture(icon)
